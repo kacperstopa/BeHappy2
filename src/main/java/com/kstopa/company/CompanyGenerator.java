@@ -8,13 +8,13 @@ public class CompanyGenerator {
     private final EmployeeGenerator employeeGenerator = new EmployeeGenerator();
 
     public TeamManager getCompany(int level) {
-        TeamManager ceo = employeeGenerator.getManager(2);
-        addLevels(ceo, level-1);
+        TeamManager ceo = employeeGenerator.getManager(3);
+        addLevels(ceo, level - 1);
         return ceo;
     }
 
-    private void addLevels(Manager manager, int level){
-        if (level <= 1){
+    private void addLevels(Manager manager, int level) {
+        if (level <= 1) {
             manager.hire(employeeGenerator.getDeveloper());
             manager.hire(employeeGenerator.getDeveloper());
         } else {
@@ -24,8 +24,8 @@ public class CompanyGenerator {
             manager.hire(manager1);
             manager.hire(manager2);
 
-            addLevels(manager1, level-1);
-            addLevels(manager2, level-1);
+            addLevels(manager1, level - 1);
+            addLevels(manager2, level - 1);
         }
 
     }

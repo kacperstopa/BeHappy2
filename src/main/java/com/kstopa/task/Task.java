@@ -19,6 +19,6 @@ public class Task {
 
     @Override
     public String toString() {
-        return this.description+", "+this.unitsOfWork + " unitsOfWork";
+        return this.description + ", " + this.unitsOfWork + " unitsOfWork";
     }
 }

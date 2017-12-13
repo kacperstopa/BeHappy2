@@ -8,7 +8,7 @@ public class EmployeeGenerator {
         return new TeamManager(Role.TEAM_LEADER, nameGenerator.getFirstname(), nameGenerator.getSurname(), size);
     }
 
-    public Developer getDeveloper(){
+    public Developer getDeveloper() {
         return new Developer(Role.DEVELOPER, nameGenerator.getFirstname(), nameGenerator.getSurname());
     }
 }

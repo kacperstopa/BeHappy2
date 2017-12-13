@@ -7,10 +7,12 @@ public class NameGenerator {
     private final String[] surnames = {"Kowalski", "Nowak", "Wisniewski", "Wojcik", "Kowalczyk", "Kaminski", "Lewandowski"};
     private final Random random = new Random();
 
-    public String getFirstname(){
+    public String getFirstname() {
         return firstnames[random.nextInt(firstnames.length)];
     }
 
-    public String getSurname() { return surnames[random.nextInt(surnames.length)]; }
+    public String getSurname() {
+        return surnames[random.nextInt(surnames.length)];
+    }
 
 }
